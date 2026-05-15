@@ -1,0 +1,137 @@
+.wa-section {
+  padding: 6rem 3rem;
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  align-items: center;
+}
+
+.wa-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  width: 100%;
+}
+
+.wa-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--sage);
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.wa-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 2rem;
+}
+
+/* certifications */
+.wa-cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.wa-cert {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 0.5px solid rgba(28,28,26,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.wa-cert:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(28,28,26,0.07);
+}
+
+.wa-cert-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--sage);
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.wa-cert-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
+}
+
+.wa-cert-meta {
+  font-size: 12px;
+  color: var(--ink-faint);
+  letter-spacing: 0.04em;
+}
+
+/* achievements */
+.wa-achieve-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.wa-achieve-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem 0;
+  border-bottom: 0.5px solid rgba(28,28,26,0.08);
+}
+.wa-achieve-item:last-child { border-bottom: none; }
+
+.wa-achieve-num {
+  font-size: 11px;
+  color: var(--ink-faint);
+  font-weight: 500;
+  min-width: 24px;
+  padding-top: 3px;
+}
+
+.wa-achieve-title {
+  font-size: 14px;
+  color: var(--ink);
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+.wa-achieve-year {
+  font-size: 12px;
+  color: var(--sage);
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .wa-section {
+    padding: 4rem 1.5rem;
+    align-items: flex-start;
+  }
+  .wa-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wa-section {
+    padding: 3rem 1.25rem;
+  }
+  .wa-title {
+    font-size: 1.8rem;
+  }
+}
