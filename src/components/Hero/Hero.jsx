@@ -57,9 +57,10 @@ export default function Hero() {
         </div>
 
         <h1 className="hero-headline hero-enter" ref={setEnterRef(1)}>
-          Hi, I'm Charlene. <br />
-
-          A <em ref={wordRef} className="hero-accent">Computer Science</em> <span className="hero-nowrap">Fresh Graduate</span>
+          Hi, I'm Charlene.
+          <span className="hero-headline-line2">
+            A <em ref={wordRef} className="hero-accent">Computer Science</em> Fresh Graduate
+          </span>
         </h1>
 
         <p className="hero-sub hero-enter" ref={setEnterRef(2)}>

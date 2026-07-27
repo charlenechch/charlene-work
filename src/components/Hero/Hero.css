@@ -110,7 +110,7 @@
   letter-spacing: -0.015em;
   color: var(--ink);
   margin-bottom: 1.75rem;
-  max-width: 700px;
+  max-width: 100%;
 }
 
 .hero-accent {
@@ -122,6 +122,14 @@
 
 .hero-nowrap {
   white-space: nowrap;
+}
+
+.hero-headline-line2 {
+  display: block;
+  white-space: nowrap;
+  font-size: clamp(1rem, 4.6vw, 3.4rem);
+  letter-spacing: -0.02em;
+  margin-top: 0.2em;
 }
 
 .hero-sub {
@@ -201,7 +209,7 @@
   }
   .hero-headline {
     font-size: 4.2rem;
-    max-width: 860px;
+    max-width: 100%;
   }
   .hero-sub {
     font-size: 16px;
@@ -216,7 +224,7 @@
   }
   .hero-headline {
     font-size: clamp(1.8rem, 4vw, 3rem);
-    max-width: 600px;
+    max-width: 100%;
   }
   .hero-orb1 {
     width: 400px;
