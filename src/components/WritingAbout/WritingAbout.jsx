@@ -56,7 +56,7 @@ export default function WritingAbout() {
         </div>
 
         {/* Achievements */}
-        <div id="about">
+        <div>
           <p className="wa-eyebrow reveal">03 — Achievements</p>
           <h2 className="wa-title reveal reveal-delay-1">Recognition</h2>
           <div className="wa-achieve-list reveal reveal-delay-2">

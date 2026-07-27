@@ -2,15 +2,12 @@ import './Nav.css'
 import { NAV_LINKS } from '../../data/content'
 import { useActiveSection } from '../../hooks/useActiveSection'
 
-// "Achievements" and "About" both live inside the same <section id="writing">
-// (they're side-by-side columns), so both map to the same top-level section
-// for the purposes of tracking scroll position and numbering.
+// Each nav link now maps 1:1 to its own top-level section.
 const HREF_TO_SECTION = {
+  '#home': 'home',
   '#projects': 'projects',
   '#writing': 'writing',
-  '#about': 'writing',
 }
-// Hero is section 1 (unlabeled in the nav), so visible links start at 2.
 const TOP_LEVEL_SECTIONS = ['home', 'projects', 'writing']
 
 function sectionNumber(href) {
