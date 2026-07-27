@@ -53,24 +53,23 @@ export default function Hero() {
       <div className="hero-content" ref={contentRef}>
         <div className="hero-status hero-enter" ref={setEnterRef(0)}>
           <span className="hero-status-dot" />
-          Seeking Internship · July 2026
+          Open to Any Opportunity 
         </div>
 
         <h1 className="hero-headline hero-enter" ref={setEnterRef(1)}>
-          Hi, I'm Charlene. <br />
-          A <em ref={wordRef} className="hero-accent">Computer Science</em> student
+          Hi, I'm Charlene. <br /><br /> <br />
+
+          A <em ref={wordRef} className="hero-accent">Computer Science</em> Fresh Graduate 
         </h1>
 
         <p className="hero-sub hero-enter" ref={setEnterRef(2)}>
-          I'm a third-year Computer Science student interested in AI, data,
-          automation, and DevOps. Currently seeking an internship starting
-          July 2026 while continuing to explore different areas of technology
-          through practical projects.
+          I'm a Computer Science graduate passionate about AI, data, cloud computing, and full-stack development. 
+          I enjoy building practical applications that solve real-world problems while continuously expanding my skills in emerging technologies.
         </p>
 
         <div className="hero-ctas hero-enter" ref={setEnterRef(3)}>
-          <a href="#projects" className="btn-primary">See my work</a>
-          <a href="#writing" className="btn-ghost">Read my writing →</a>
+          <a href="#projects" className="btn-primary">Projects</a>
+          <a href="#writing" className="btn-ghost">Certifications →</a>
         </div>
       </div>
 
