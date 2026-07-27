@@ -4,13 +4,18 @@ import { useActiveSection } from '../../hooks/useActiveSection'
 
 // "Achievements" and "About" both live inside the same <section id="writing">
 // (they're side-by-side columns), so both map to the same top-level section
-// for the purposes of tracking scroll position.
+// for the purposes of tracking scroll position and numbering.
 const HREF_TO_SECTION = {
   '#projects': 'projects',
   '#writing': 'writing',
   '#about': 'writing',
 }
+// Hero is section 1 (unlabeled in the nav), so visible links start at 2.
 const TOP_LEVEL_SECTIONS = ['home', 'projects', 'writing']
+
+function sectionNumber(href) {
+  return TOP_LEVEL_SECTIONS.indexOf(HREF_TO_SECTION[href]) + 1
+}
 
 export default function Nav() {
   const active = useActiveSection(TOP_LEVEL_SECTIONS)
@@ -23,12 +28,12 @@ export default function Nav() {
           Charlene Chai
         </a>
         <ul className="nav-links">
-          {NAV_LINKS.map((l, i) => {
+          {NAV_LINKS.map((l) => {
             const isActive = active !== null && HREF_TO_SECTION[l.href] === active
             return (
               <li key={l.href}>
                 <a href={l.href} className={isActive ? 'is-active' : ''}>
-                  <span className="nav-link-index">{String(i + 1).padStart(2, '0')}.</span>
+                  <span className="nav-link-index">{String(sectionNumber(l.href)).padStart(2, '0')}.</span>
                   {l.label}
                 </a>
               </li>
