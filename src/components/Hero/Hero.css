@@ -120,6 +120,10 @@
   will-change: transform;
 }
 
+.hero-nowrap {
+  white-space: nowrap;
+}
+
 .hero-sub {
   font-size: 15px;
   color: var(--ink-muted);
