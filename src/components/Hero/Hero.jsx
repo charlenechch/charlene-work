@@ -57,7 +57,7 @@ export default function Hero() {
         </div>
 
         <h1 className="hero-headline hero-enter" ref={setEnterRef(1)}>
-          Hi, I'm Charlene. <br /><br /> <br />
+          Hi, I'm Charlene. <br /><br /> 
 
           A <em ref={wordRef} className="hero-accent">Computer Science</em> Fresh Graduate 
         </h1>
