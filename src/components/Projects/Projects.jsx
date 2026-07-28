@@ -85,7 +85,7 @@ export default function Projects() {
   return (
     <>
       <section className="projects-featured-snap" id="projects">
-        <p className="section-eyebrow reveal">01 — Projects</p>
+        {/* <p className="section-eyebrow reveal">01 — Projects</p> */}
         <h2 className="section-title reveal reveal-delay-1">Things I've built</h2>
         <div className="projects-grid">
           {featured.map((p) => <FeaturedCard key={p.id} project={p} />)}
